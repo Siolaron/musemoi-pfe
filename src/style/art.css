@@ -1,0 +1,9 @@
+@import url(color.css);
+
+.art__popup{
+    
+}
+
+.art__popup-hidden{
+    display: none;
+}

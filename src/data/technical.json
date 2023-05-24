@@ -1,0 +1,23 @@
+{
+    "technical": [{
+            "id": 0,
+            "name": "huile sur toile"
+        },
+        {
+            "id": 1,
+            "name": "tempera"
+        },
+        {
+            "id": 2,
+            "name": "pastel"
+        },
+        {
+            "id": 3,
+            "name": "huile sur bois"
+        },
+        {
+            "id": 4,
+            "name": "feuille d'or"
+        }
+    ]
+}

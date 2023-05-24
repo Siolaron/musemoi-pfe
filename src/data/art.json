@@ -1,0 +1,241 @@
+{
+    "art": [{
+            "id": 0,
+            "madeBy": "John Williams Waterhouse",
+            "name": "L'Âme de la rose",
+            "createdAt": "1908",
+            "technical": [0],
+            "dimensions": { "height": 88.5, "length": 59 },
+            "movement": [0],
+            "description": "Description",
+            "place": "Collection privée",
+            "emotions": [
+                7, 11
+            ],
+            "img": "0.jpg"
+        },
+        {
+            "id": 1,
+            "madeBy": "Johannes Vermeer",
+            "name": "La Jeune fille à la perle",
+            "createdAt": "1665",
+            "technical": [0],
+            "dimensions": { "height": 44.5, "length": 39 },
+            "movement": [1],
+            "description": "",
+            "place": "Mauritshuis - La Haye, Pays-Bas",
+            "emotions": [
+                1, 2
+            ],
+            "img": "1.jpg"
+        },
+        {
+            "id": 2,
+            "madeBy": "Vincent van Gogh",
+            "name": "La Nuit étoilé",
+            "createdAt": "juin 1889",
+            "technical": [0],
+            "dimensions": { "height": 74, "length": 92 },
+            "movement": [2],
+            "description": "",
+            "emotions": [
+                1, 2
+            ],
+            "img": "2.jpg"
+        },
+        {
+            "id": 3,
+            "madeBy": "Edvard Munch",
+            "name": "Le Cri",
+            "createdAt": "1893",
+            "technical": [1, 2],
+            "dimensions": { "height": 91, "length": 73.5 },
+            "movement": [3],
+            "description": "",
+            "emotions": [
+                1, 2
+            ],
+            "img": "3.jpg"
+        },
+        {
+            "id": 4,
+            "madeBy": "Artiste inconnu",
+            "name": "Vénus de Milo",
+            "createdAt": "150-130 av. JC",
+            "technical": [],
+            "dimensions": { "height": 202, "length": 36 },
+            "movement": [4],
+            "description": "",
+            "place": "Département des antiquités grecques, étrusques et romaines du musée du Louvre - Paris, France",
+            "emotions": [
+                1, 2
+            ],
+            "img": "4.png"
+        },
+        {
+            "id": 5,
+            "madeBy": "Jean-Honoré Fragonard",
+            "name": "Les Hasards heureux de l'escarpolette",
+            "createdAt": "entre 1767 et 1769",
+            "technical": [0],
+            "dimensions": { "height": 81, "length": 64 },
+            "movement": [5],
+            "description": "",
+            "place": "Wallace Collection - Londres, Royaume-Uni",
+            "emotions": [
+                1, 2
+            ],
+            "img": "5.jpg"
+        },
+        {
+            "id": 6,
+            "madeBy": "Sandro Botticelli",
+            "name": "La Naissance de Vénus",
+            "createdAt": "Vers 1485",
+            "technical": [1],
+            "dimensions": { "height": 172.5, "length": 278.5 },
+            "movement": [6],
+            "description": "",
+            "place": "Galerie des Offices, salle 10-14 Botticelli - Florence, Italie",
+            "emotions": [
+                1, 2
+            ],
+            "img": "6.jpg"
+        },
+        {
+            "id": 7,
+            "madeBy": "Léonard de Vinci",
+            "name": "La Joconde",
+            "createdAt": "Entre 1503 et 1506 ou entre 1513 et 1516, peut-être jusqu'à 1517",
+            "technical": [4],
+            "dimensions": { "height": 77, "length": 53 },
+            "movement": [6, 7],
+            "description": "",
+            "place": "Musée du Louvre, peintures italiennes, salle 6 - Paris, France",
+            "emotions": [
+                1, 2
+            ],
+            "img": "7.jpg"
+        },
+        {
+            "id": 8,
+            "madeBy": "Léonard de Vinci",
+            "name": "La Cène",
+            "createdAt": "1495-1498",
+            "technical": [5],
+            "dimensions": { "height": 460, "length": 880 },
+            "movement": [6, 7],
+            "description": "",
+            "place": "Église Santa Maria delle Grazie - Milan, Italie",
+            "emotions": [
+                1, 2
+            ],
+            "img": "8.jpg"
+        },
+        {
+            "id": 9,
+            "madeBy": "Gustav Klimt",
+            "name": "Le Baiser",
+            "createdAt": " 1908-1909",
+            "technical": [0, 4],
+            "dimensions": { "height": 180, "length": 180 },
+            "movement": [11],
+            "description": "",
+            "place": "Österreichische Galerie Belvedere, palais du Belvédère - Vienne, Autriche ",
+            "emotions": [
+                1, 2
+            ],
+            "img": "9.jpg"
+        },
+        {
+            "id": 10,
+            "madeBy": "Johannes Vermeer",
+            "name": "La Laitière",
+            "createdAt": "1658",
+            "technical": [0],
+            "dimensions": { "height": 45.5, "length": 41 },
+            "movement": [1],
+            "description": "",
+            "place": "Rijksmuseum - Amsterdam, Pays-Bas",
+            "emotions": [
+                1, 2
+            ],
+            "img": "10.jpg"
+        },
+        {
+            "id": 11,
+            "madeBy": "Edward Hopper",
+            "name": "Nighthawks",
+            "createdAt": "1942",
+            "technical": [0],
+            "dimensions": { "height": 84.1, "length": 152.4 },
+            "movement": [8],
+            "description": "",
+            "place": "Art Institute of Chicago - Chicago, États-Unis",
+            "emotions": [
+                1, 2
+            ],
+            "img": "11.jpg"
+        },
+        {
+            "id": 12,
+            "madeBy": "Grant Wood",
+            "name": "American Gothic",
+            "createdAt": "1930",
+            "technical": [0],
+            "dimensions": { "height": 78, "length": 65.3 },
+            "movement": [9],
+            "description": "",
+            "place": "Art Institute of Chicago - Chicago, États-Unis",
+            "emotions": [
+                1, 2
+            ],
+            "img": "12.jpg"
+        },
+        {
+            "id": 13,
+            "madeBy": "Claude Monet",
+            "name": "La Promenade",
+            "createdAt": "1875",
+            "technical": [0],
+            "dimensions": { "height": 100, "length": 81 },
+            "movement": [10],
+            "description": "",
+            "place": "National Gallery of Art - Washington, États-Unis",
+            "emotions": [
+                1, 2
+            ],
+            "img": "13.jpg"
+        },
+        {
+            "id": 14,
+            "madeBy": "Claude Monet",
+            "name": "Impression, soleil levant",
+            "createdAt": "13 novembre 1872",
+            "technical": [0],
+            "dimensions": { "height": 48, "length": 63 },
+            "movement": [10],
+            "description": "",
+            "place": "Musée Marmottan Monet - Paris, France",
+            "emotions": [
+                1, 2
+            ],
+            "img": "14.jpg"
+        },
+        {
+            "id": 15,
+            "madeBy": "Auguste Renoir",
+            "name": "Bal du moulin de la Galette",
+            "createdAt": "1876",
+            "technical": [0],
+            "dimensions": { "height": 131, "length": 175 },
+            "movement": [10],
+            "description": "",
+            "place": "Musée d'Orsay - Paris, France",
+            "emotions": [
+                1, 2
+            ],
+            "img": "15.jpg"
+        }
+    ]
+}

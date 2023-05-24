@@ -1,0 +1,27 @@
+{
+    "personal": [{
+            "artId": 0,
+            "emotions": [
+                2, 7
+            ]
+        },
+        {
+            "artId": 2,
+            "emotions": [
+                1, 2
+            ]
+        },
+        {
+            "artId": 5,
+            "emotions": [
+                1, 2
+            ]
+        },
+        {
+            "artId": 9,
+            "emotions": [
+                1, 2
+            ]
+        }
+    ]
+}

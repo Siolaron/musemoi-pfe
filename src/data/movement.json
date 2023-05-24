@@ -1,0 +1,51 @@
+{
+    "movement": [{
+            "id": 0,
+            "name": "Préraphaélisme"
+        },
+        {
+            "id": 1,
+            "name": "Baroque"
+        },
+        {
+            "id": 2,
+            "name": "Postimpressionnisme"
+        },
+        {
+            "id": 3,
+            "name": "Expressionnisme"
+        },
+        {
+            "id": 4,
+            "name": "Époque hellénistique"
+        },
+        {
+            "id": 5,
+            "name": "Rococo"
+        },
+        {
+            "id": 6,
+            "name": "Renaissance"
+        },
+        {
+            "id": 7,
+            "name": "Haute Renaissance"
+        },
+        {
+            "id": 8,
+            "name": "Réalisme américain"
+        },
+        {
+            "id": 9,
+            "name": "Régionalisme"
+        },
+        {
+            "id": 10,
+            "name": "Impressionnisme"
+        },
+        {
+            "id": 11,
+            "name": "Symbolisme"
+        }
+    ]
+}
