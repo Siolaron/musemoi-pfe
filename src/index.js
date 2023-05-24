@@ -9,18 +9,22 @@ import Header from './layouts/header';
 import Search from './pages/search';
 import Footer from './layouts/footer';
 import Scan from './pages/scan';
+import './style/normalize.css';
+import './style/global.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
         <Router>
         <Header />
-            <Routes>
-                <Route path="/" element={<Collection />} />
-                <Route path="/art/:artId" element={<Art />} />
-                <Route path="/search" element={<Search />} />
-                <Route path="/scan" element={<Scan />} />
-            </Routes>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Collection />} />
+                    <Route path="/art/:artId" element={<Art />} />
+                    <Route path="/search" element={<Search />} />
+                    <Route path="/scan" element={<Scan />} />
+                </Routes>
+            </main>
         <Footer />
         </Router>
     </React.StrictMode>

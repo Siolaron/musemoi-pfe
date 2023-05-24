@@ -1,0 +1,12 @@
+@import url(../variables/color.css);
+
+header{
+    height: 70px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}

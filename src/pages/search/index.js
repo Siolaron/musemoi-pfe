@@ -8,7 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 function Search() {
     let emotionFromArt  = useLocation().state?.emotion
     const [search, setSearch] = useState('');
-    const [emotions, setEmotions] = useState([emotionFromArt]);
+    const [emotions, setEmotions] = useState([]);
     const [technicals, setTechnicals] = useState([]);
     const [movements, setMovement] = useState([]);
     let isMovement
@@ -60,7 +60,7 @@ function Search() {
             if(emotion.id === emotionFromArt){
                 return (
                     <li key={key}>
-                        <label>{emotion.name}
+                        <label className='test'>{emotion.name}
                         <input 
                             type="checkbox" 
                             className="filter__checkbox" 
@@ -74,7 +74,7 @@ function Search() {
             else{
                 return (
                     <li key={key}>
-                        <label>{emotion.name}
+                        <label className='test'>{emotion.name}
                         <input 
                             type="checkbox" 
                             className="filter__checkbox" 

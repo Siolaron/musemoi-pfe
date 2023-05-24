@@ -1,4 +1,4 @@
-@import url(color.css);
+@import url(../variables/color.css);
 
 footer{
     position: fixed;
@@ -10,11 +10,12 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 footer a {
     color: var(--color-white);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .active{

@@ -26,7 +26,7 @@ function Art() {
     let classNameEmotion
     const [artEmotions, setArtEmotions] = useState([])
     const [artEmotionInput, setArtEmotionInput] = useState('')
-
+    
     const handlePopUP = (e) =>{
         document.querySelector('.art__popup').classList.remove('art__popup-hidden')
     }

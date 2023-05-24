@@ -1,8 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../style/footer.css'
+import '../style/layouts/footer.css'
+import {useLocation} from 'react-router-dom';
 
 function Footer() {
+
+  const location = useLocation().pathname
+  if(location === '/search' || location === '/scan' || location === '/'){
+    document.querySelector('main').classList.remove('art')
+  }else{
+    document.querySelector('main').classList.add('art')
+  }
+  
   return (
     <>
       <footer className='footer'>
