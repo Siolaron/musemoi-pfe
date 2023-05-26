@@ -9,7 +9,7 @@ function Collection() {
       <ul className="collection">
         {collectionJson.personal.map((data, key) => {
             const singleArt = artJson.art.find(el=> el.id == data.artId)
-            const img = require("../../assets/" + singleArt.img)
+            const img = require("../../assets/art/" + singleArt.img)
             const route = "/art/" + singleArt.id
           return (
               <li key={key}>

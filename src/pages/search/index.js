@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import artJson from '../../data/art.json';
 import technicalJson from '../../data/technical.json';
 import emotionsJson from '../../data/emotions.json';
@@ -6,7 +6,7 @@ import movementJson from '../../data/movement.json';
 import { Link, useLocation } from 'react-router-dom';
 
 function Search() {
-    let emotionFromArt  = useLocation().state?.emotion
+    const emotionFromArt  = useLocation().state?.emotion
     const [search, setSearch] = useState('');
     const [emotions, setEmotions] = useState([]);
     const [technicals, setTechnicals] = useState([]);
@@ -15,12 +15,20 @@ function Search() {
     let isTechnique
     let isEmotion
 
+    useEffect(()=>{
+        if(emotionFromArt != undefined){
+            setEmotions(emotions => [...emotions, emotionFromArt])
+        }
+        
+    },[emotionFromArt]) 
+
+
     const changeEmotionsFilter = (e) =>{
         if(e.target.checked){
-            setEmotions(emotions => [...emotions, e.target.value])
+            setEmotions(emotions => [...emotions, Number(e.target.value)])
         }
         else{
-            setEmotions(emotions.filter(element => element !== e.target.value))
+            setEmotions(emotions.filter(element => element !== Number(e.target.value)))
         }
     }
 
@@ -57,34 +65,21 @@ function Search() {
             <h2>Emotions</h2>
             <ul>
             {emotionsJson.emotions.map((emotion, key) => {
-            if(emotion.id === emotionFromArt){
+                let classNameEmotion = "filter__checkbox emotion-" + emotion.id
+
                 return (
                     <li key={key}>
                         <label className='test'>{emotion.name}
                         <input 
                             type="checkbox" 
-                            className="filter__checkbox" 
+                            className={classNameEmotion}
                             value={emotion.id}
                             onChange={changeEmotionsFilter}
-                            checked/>
-                        </label>
-                    </li>
-                );
-            }
-            else{
-                return (
-                    <li key={key}>
-                        <label className='test'>{emotion.name}
-                        <input 
-                            type="checkbox" 
-                            className="filter__checkbox" 
-                            value={emotion.id}
-                            onChange={changeEmotionsFilter}
+                            checked={emotions.find(el => el === emotion.id) >= 0}
                             />
                         </label>
                     </li>
                 );
-            }
             })}
             </ul>
             <h2>Techniques</h2>
@@ -122,7 +117,7 @@ function Search() {
             </ul>
             <ul className="collection">
             {artJson.art.map((artSingle, key) => {
-                const img = require("../../assets/" + artSingle.img)
+                const img = require("../../assets/art/" + artSingle.img)
                 const route = "/art/" + artSingle.id
                 const name = artSingle.name.toLowerCase()
                 const madeBy = artSingle.madeBy.toLowerCase()

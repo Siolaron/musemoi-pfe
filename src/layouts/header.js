@@ -3,11 +3,20 @@ import '../style/layouts/header.css';
 
 function Header() {
   const location = useLocation().pathname
+  let title
 
   if(location === '/search' || location === '/scan'){
+    if(location === '/search'){
+      title = 'Écran de recherche'
+    }else{
+      title = 'Écran de scan'
+    }
+
+    const logo = require('../assets/logo.png')
     return (
       <header className="header">
-        <p>{location}</p>
+        <h1 className="sr-only">{title}</h1>
+        <img src={logo} alt='Logo Musemoi' height='40px' width='40px'/>
       </header>
     );
   }

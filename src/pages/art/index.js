@@ -18,11 +18,12 @@ function remplirTableauAleatoire() {
 const tableauAleatoire = remplirTableauAleatoire();
   
 function Art() {
+    
     const { artId } = useParams()
     let previousPath  = useLocation().state.previousPath 
     const navigate = useNavigate();
     const singleArt = artJson.art.find(el=> el.id == artId)
-    const img = require("../../assets/" + singleArt.img)
+    const img = require("../../assets/art/" + singleArt.img)
     let classNameEmotion
     const [artEmotions, setArtEmotions] = useState([])
     const [artEmotionInput, setArtEmotionInput] = useState('')
