@@ -1,2 +1,47 @@
 @import url(./variables/color.css);
 @import url(./variables/font.css);
+
+.overlay_filter_hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.filter {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 80%;
+    height: calc(100vh - 150px);
+    background: var(--color-white);
+    padding: 1rem;
+    opacity: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.filter.open {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.filter__emotion, .filter__technical, .filter__movement{
+    display: none;
+}
+
+.filter__element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter__element p{
+    font-size: var(--font-size-button);
+}
+
+.filter__open{
+    display: block;
+}

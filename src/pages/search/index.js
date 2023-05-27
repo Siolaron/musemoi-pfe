@@ -4,6 +4,8 @@ import technicalJson from '../../data/technical.json';
 import emotionsJson from '../../data/emotions.json';
 import movementJson from '../../data/movement.json';
 import { Link, useLocation } from 'react-router-dom';
+import openIcon from '../../assets/icone/open.png';
+import '../../style/search.css';
 
 function Search() {
     const emotionFromArt  = useLocation().state?.emotion
@@ -23,7 +25,6 @@ function Search() {
         }
         
     },[emotionFromArt]) 
-
 
     const changeEmotionsFilter = (e) =>{
         if(e.target.checked){
@@ -52,72 +53,82 @@ function Search() {
         }
     }
 
+    const openFilter = (e) =>{
+        e.target.classList.add('open__filter');
+    }
+
     return (
         <>
-            <div className="filter">
-                <label>Rechercher
-                <input 
-                    type="text" 
-                    className="filter__search" 
-                    placeholder="Rechercher" 
-                    value={search}
-                    onChange={e => setSearch(e.target.value)}/>
-                </label>
-            </div>
-            <h2>Emotions</h2>
-            <ul>
-            {emotionsJson.emotions.map((emotion, key) => {
-                let classNameEmotion = "filter__checkbox emotion-" + emotion.id
+            <div id='overlay' class='overlay_filter overlay_filter_hidden'>
+                <div className="filter">
+                    <div className='filter__element' onClick={openFilter}><p>Emotions</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    <ul className="filter__emotion">
+                    {emotionsJson.emotions.map((emotion, key) => {
+                        let classNameEmotion = "filter__checkbox emotion-" + emotion.id
 
-                return (
-                    <li key={key}>
-                        <label className='test'>{emotion.name}
-                        <input 
-                            type="checkbox" 
-                            className={classNameEmotion}
-                            value={emotion.id}
-                            onChange={changeEmotionsFilter}
-                            checked={emotions.find(el => el === emotion.id) >= 0}
-                            />
-                        </label>
-                    </li>
-                );
-            })}
-            </ul>
-            <h2>Techniques</h2>
-            <ul>
-            {technicalJson.technical.map((technique, key) => {
-                return (
-                    <li key={key}>
-                        <label>{technique.name}
-                        <input 
-                            type="checkbox" 
-                            className="filter__checkbox" 
-                            value={technique.id}
-                            onChange={changeTechnicalFilter}/>
-                        </label>
-                    </li>
-                );
-            })}
-            </ul>
-            <h2>Mouvements</h2>
-            <ul>
-            {movementJson.movement.map((movement, key) => {
-                return (
-                    <li key={key}>
-                        <label>{movement.name}
-                        <input 
-                            type="checkbox" 
-                            className="filter__checkbox" 
-                            value={movement.id}
-                            onChange={changeMovementFilter}
-                            />
-                        </label>
-                    </li>
-                );
-            })}
-            </ul>
-            <ul className="collection">
+                        return (
+                            <li key={key}>
+                                <label>
+                                <input 
+                                    type="checkbox" 
+                                    className={classNameEmotion}
+                                    value={emotion.id}
+                                    onChange={changeEmotionsFilter}
+                                    checked={emotions.find(el => el === emotion.id) >= 0}
+                                    />
+                                    {emotion.name}
+                                </label>
+                            </li>
+                        );
+                    })}
+                    </ul>
+                    <div className='filter__element'><p>Techniques</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    <ul className="filter__technical">
+                    {technicalJson.technical.map((technique, key) => {
+                        return (
+                            <li key={key}>
+                                <label>
+                                <input 
+                                    type="checkbox" 
+                                    className="filter__checkbox" 
+                                    value={technique.id}
+                                    onChange={changeTechnicalFilter}/>
+                                    {technique.name}
+                                </label>
+                            </li>
+                        );
+                    })}
+                    </ul>
+                    <div className='filter__element'><p>Mouvements</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    <ul className="filter__movement">
+                    {movementJson.movement.map((movement, key) => {
+                        return (
+                            <li key={key}>
+                                <label>
+                                <input 
+                                    type="checkbox" 
+                                    className="filter__checkbox" 
+                                    value={movement.id}
+                                    onChange={changeMovementFilter}
+                                    />
+                                    {movement.name}
+                                </label>
+                            </li>
+                        );
+                    })}
+                    </ul>
+                </div>
+            </div>
+            <div className="collection">
+            <label><span className='sr-only'>Rechercher</span>
+            <input 
+                type="text" 
+                className="filter__search" 
+                placeholder="Rechercher" 
+                value={search}
+                onChange={e => setSearch(e.target.value)}/>
+            </label>
+            <ul className="collection__art">
             {artJson.art.map((artSingle, key) => {
                 const img = require("../../assets/art/" + artSingle.img)
                 const route = "/art/" + artSingle.id
@@ -161,6 +172,7 @@ function Search() {
                 }
             })}
       </ul>
+      </div>
         </>
     )
 }
