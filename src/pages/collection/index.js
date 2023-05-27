@@ -4,6 +4,7 @@ import artJson from '../../data/art.json'
 import { Link } from 'react-router-dom'
 
 function Collection() {
+  document.querySelector('main')?.classList.remove('art');
   return (
     <>
       <ul className="collection">

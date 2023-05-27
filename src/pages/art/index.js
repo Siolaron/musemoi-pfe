@@ -6,6 +6,8 @@ import personalJson from '../../data/personnal.json';
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import '../../style/art.css'
+import returnIcon from '../../assets/icone/back.png'
+import mapPin from '../../assets/icone/pin.png'
 
 function remplirTableauAleatoire() {
     let tableau = [];
@@ -28,12 +30,14 @@ function Art() {
     const [artEmotions, setArtEmotions] = useState([])
     const [artEmotionInput, setArtEmotionInput] = useState('')
     
+    document.querySelector('main')?.classList.add('art');
+
     const handlePopUP = (e) =>{
-        document.querySelector('.art__popup').classList.remove('art__popup-hidden')
+        document.querySelector('#overlay').classList.remove('art__popup-hidden')
     }
 
     const closePopup = (e) =>{
-        document.querySelector('.art__popup').classList.add('art__popup-hidden')
+        document.querySelector('#overlay').classList.add('art__popup-hidden')
     }
 
     const handleSubmit = event =>{
@@ -53,89 +57,99 @@ function Art() {
     return (
         <>
             <section className="art__presentation" style={{backgroundImage: `url(${img})`}}>
-                <button onClick={() => navigate(-1)}>BACK</button>
-                <h1>{singleArt.name}</h1>
-                <h2>{singleArt.madeBy}</h2>
+                <div className="art__presentation_back" onClick={() => navigate(-1)}><img src={returnIcon} alt=''/><span className='sr-only'>Retour en arrière</span></div>
+                <div className='art__presentation_info'>
+                    <h2>{singleArt.name}</h2>
+                    <h3>{singleArt.madeBy}</h3>
+                </div>
             </section>
-            <p>{singleArt.createdAt} - 
-            {singleArt.technical.map((data, key) => {
-                const technical = technicalJson.technical.find(el => el.id === data)
-                return (
-                    <span className="" key={key}> 
-                        {technical.name}
-                    </span>
-                );
-            })}
-            </p>
-            {previousPath !== '/search' && (
-             <>
-             <p>{singleArt.description}</p>
-             </>
-            )}
-            {previousPath !== '/scan' && (
-             <>
-             <p>{singleArt.place}</p>
-             </>
-            )}
-            {previousPath === '/' && (
-             <>
-             {singleArt.emotions.map((data, key) => {
-                const emotion = emotionsJson.emotions.find(el => el.id === data)
-                const ownEmotions = personalJson.personal.find(el=> el.artId === singleArt.id).emotions
-                classNameEmotion = "normal"
-                if(ownEmotions.includes(emotion.id)){
-                    classNameEmotion = "ownEmotion"
-                }
-                
-                return (
-                    <span className={classNameEmotion} key={key}> 
-                    <Link to='/search' state={{ emotion: emotion.id }}> #{emotion.name}</Link>
-                    </span>
-                );
-            })}
-             </>
-            )}
-             {previousPath === '/scan' && (
-             <>
-             <button onClick={handlePopUP}>Ajouter à ma gallerie</button>
-             </>
-            )}
-            {previousPath === '/scan' && (
-             <>
-             <div className="art__popup art__popup-hidden">
-             <button onClick={closePopup}>Fermer</button>
-                <form  onSubmit={handleSubmit}>
-                    <label>Ajouter une émotion
-                    <input 
-                        type="text" 
-                        className="filter__search" 
-                        placeholder="Ajouter une émotion" 
-                        value={artEmotionInput}
-                        onChange={e => setArtEmotionInput(e.target.value)}
-                        />
-                    </label>
-                    <ul>
-                    {emotionsJson.emotions.map((emotion, key) => {
-                        if(tableauAleatoire.indexOf(emotion.id) !== -1){
-                            return (
-                                <li key={key}>
-                                    <label>{emotion.name}
-                                    <input 
-                                        type="checkbox" 
-                                        className="filter__checkbox" 
-                                        value={emotion.id}
-                                        onChange={changeEmotions}/>
-                                    </label>
-                                </li>
-                            );
-                        }
-                    })}
-                    </ul>
-                    <button type="submit">Ajouter</button>
-                </form>
-             </div>
-             </>
-            )}
+            <div className='art__information'>
+                <p className='art__information_date'>{singleArt.createdAt} - 
+                {singleArt.technical.map((data, key) => {
+                    const technical = technicalJson.technical.find(el => el.id === data)
+                    return (
+                        <span className="art__information_date-technique" key={key}> 
+                            {technical.name}
+                        </span>
+                    );
+                })}
+                </p>
+                {previousPath !== '/search' && (
+                <>
+                <p className='art__information_more'>À propos de l'oeuvre</p>
+                <p>{singleArt.description}</p>
+                </>
+                )}
+                {previousPath !== '/scan' && (
+                <>
+                <div className='art__information_place'><img src={mapPin} alt='' width='48px' height='48px' /><p>{singleArt.place}</p></div>
+                </>
+                )}
+                {previousPath === '/' && (
+                <>
+                <ul className='art__information_emotion'>
+                {singleArt.emotions.map((data, key) => {
+                    const emotion = emotionsJson.emotions.find(el => el.id === data)
+                    const ownEmotions = personalJson.personal.find(el=> el.artId === singleArt.id).emotions
+                    classNameEmotion = "normal"
+                    if(ownEmotions.includes(emotion.id)){
+                        classNameEmotion = "ownEmotion"
+                    }
+                    
+                    return (
+                        <li className={classNameEmotion} key={key}> 
+                        <Link to='/search' state={{ emotion: emotion.id }}> #{emotion.name}</Link>
+                        </li>
+                    );
+                })}
+                </ul>
+                </>
+                )}
+                {previousPath === '/scan' && (
+                <>
+                <div className='art__information_addCollection' onClick={handlePopUP}>Ajouter à ma collection <img src={returnIcon} alt=''/><span className='sr-only'>Ouverture d'une popup pour ajouter une émotion</span></div>
+                </>
+                )}
+                {previousPath === '/scan' && (
+                <>
+                <div className="art__popup1 art__popup-hidden" id='overlay'>
+                    <div className="art__popup">
+                    <div className="art__popup_close" onClick={closePopup}>&times;</div>
+                        <form  onSubmit={handleSubmit}>
+                            <label><p>Associer un ressenti à l'oeuvre</p>
+                            <input 
+                                type="text" 
+                                className="filter__search" 
+                                value={artEmotionInput}
+                                onChange={e => setArtEmotionInput(e.target.value)}
+                                />
+                            </label>
+                            <p>Si vous n’avez pas d’idée vous pouvez toujours seléctionner un ressenti</p>
+                            <ul className='art__popup_list-emotions'>
+                            {emotionsJson.emotions.map((emotion, key) => {
+                                if(tableauAleatoire.indexOf(emotion.id) !== -1){
+                                    const idName = "emotion" + emotion.id
+                                    return (
+                                        <li key={key}>
+                                            <input 
+                                            type="checkbox" 
+                                            className="filter__checkbox" 
+                                            value={emotion.id}
+                                            id={idName}
+                                            onChange={changeEmotions}/>
+                                            <label className='art__popup_list-emotions_single' for={idName}>{emotion.name}</label>
+                                        </li>
+                                    );
+                                }
+                            })}
+                            </ul>
+                            <input type="submit" value='Ajouter' />
+                        </form>
+                    </div>
+                </div>
+                </>
+                )}
+            </div>
         </>
     )
 }

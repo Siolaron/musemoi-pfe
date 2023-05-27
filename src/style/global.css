@@ -29,13 +29,43 @@ img{
 
 main{
     position: relative;
+    margin-bottom: 100px;
 }
 
 main:not(.art){
     top: 70px;
+    margin-bottom: 170px;
 }
 
 body{
     font-family: var(--font-Montserrat-Regular);
+    font-size: var(--font-size-paragraph);
 }
 
+h2{
+    font-size: var(--font-size-h2);
+}
+
+h3{
+    font-size: var(--font-size-h3);
+}
+
+.filter__search{
+    border: 1px solid var(--color-gold);
+    height: 30px;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: var(--color-black);
+    border: none;
+    color: var(--color-white);
+    padding: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 10px;
+  }

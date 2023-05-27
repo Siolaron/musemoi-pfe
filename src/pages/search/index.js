@@ -15,6 +15,8 @@ function Search() {
     let isTechnique
     let isEmotion
 
+    document.querySelector('main')?.classList.remove('art');
+
     useEffect(()=>{
         if(emotionFromArt != undefined){
             setEmotions(emotions => [...emotions, emotionFromArt])
