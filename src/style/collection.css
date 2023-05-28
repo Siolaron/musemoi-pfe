@@ -1,0 +1,21 @@
+@import url(./variables/color.css);
+@import url(./variables/font.css);
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    height: calc(100vh - 182px);
+    flex-direction: column;
+    padding: 16px;
+}
+
+.collection img{
+    height: calc((100vh / 2) - 96px);
+    object-fit: contain;
+}
+
+.collection li {
+    display: flex;
+    justify-content: center;
+}

@@ -124,7 +124,7 @@ function Search() {
                     </details>
                 </div>
             </div>
-            <div className="collection">
+            <div className="search__collection">
             <label><span className='sr-only'>Rechercher</span>
             <input 
                 type="text" 
@@ -133,7 +133,7 @@ function Search() {
                 value={search}
                 onChange={e => setSearch(e.target.value)}/>
             </label>
-            <ul className="collection__art">
+            <ul className="search__collection__art">
             {artJson.art.map((artSingle, key) => {
                 const img = require("../../assets/art/" + artSingle.img)
                 const route = "/art/" + artSingle.id

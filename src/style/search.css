@@ -104,15 +104,15 @@ details[open] > summary img {
     transform: rotate(45deg);
 }
 
-.collection{
+.search__collection{
     padding: 16px 8px;
 }
 
-.collection .filter__search{
+.search__collection .filter__search{
     width: 90vw;
 }
 
-.collection label{
+.search__collection label{
     display: flex;
     justify-content: center;
 }
@@ -121,7 +121,7 @@ details[open] > summary img {
     width: calc((100vw / 2 ) - 16px);
 }
 
-.collection__art{
+.search__collection__art{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -134,7 +134,7 @@ details[open] > summary img {
     padding: 8px 0;
 }
 
-.collection__art li{
+.search__collection__art li{
     display: flex;
     align-items: center;
     justify-content: center;
