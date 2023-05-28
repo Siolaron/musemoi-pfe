@@ -55,7 +55,7 @@
 }
 
 .art__information{
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.2) 0%, rgb(255, 255, 255) 30px);
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.2) 0%, rgb(255, 255, 255) 20px);
     padding: 1rem;
 }
 

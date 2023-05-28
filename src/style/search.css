@@ -28,20 +28,114 @@
     pointer-events: all;
 }
 
-.filter__emotion, .filter__technical, .filter__movement{
-    display: none;
-}
-
 .filter__element{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.filter__element p{
     font-size: var(--font-size-button);
+    font-family: var(--font-Montserrat-Medium);
+    margin-top: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 1rem;
 }
 
-.filter__open{
+summary img{
+    transform: rotate(0);
+    transition: .25s transform ease;
+}
+
+details[open] > summary img {
+    transform: rotate(180deg);
+}
+
+.filter__emotion, .filter__movement, .filter__technical{
+    margin-top: 1.5rem;
+}
+
+.filter__emotion input[type="checkbox"], .filter__movement input[type="checkbox"], .filter__technical input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.filter__emotion .container, .filter__movement .container, .filter__technical .container{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-gold);
+    border-radius: 3px;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: var(--color-gold);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
     display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color-white);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.collection{
+    padding: 16px 8px;
+}
+
+.collection .filter__search{
+    width: 90vw;
+}
+
+.collection label{
+    display: flex;
+    justify-content: center;
+}
+
+.long{
+    width: calc((100vw / 2 ) - 16px);
+}
+
+.collection__art{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.long{
+    padding: 8px 4px;
+}
+.large{
+    padding: 8px 0;
+}
+
+.collection__art li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -53,22 +53,19 @@ function Search() {
         }
     }
 
-    const openFilter = (e) =>{
-        e.target.classList.add('open__filter');
-    }
-
     return (
         <>
             <div id='overlay' class='overlay_filter overlay_filter_hidden'>
                 <div className="filter">
-                    <div className='filter__element' onClick={openFilter}><p>Emotions</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    <details>
+                    <summary className='filter__element'>Emotions<img src={openIcon} alt='' width='16px' height='8px'/></summary>
                     <ul className="filter__emotion">
                     {emotionsJson.emotions.map((emotion, key) => {
                         let classNameEmotion = "filter__checkbox emotion-" + emotion.id
 
                         return (
                             <li key={key}>
-                                <label>
+                                <label className='container'>
                                 <input 
                                     type="checkbox" 
                                     className={classNameEmotion}
@@ -77,34 +74,40 @@ function Search() {
                                     checked={emotions.find(el => el === emotion.id) >= 0}
                                     />
                                     {emotion.name}
+                                    <span className='checkmark'></span>
                                 </label>
                             </li>
                         );
                     })}
                     </ul>
-                    <div className='filter__element'><p>Techniques</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    </details>
+                    <details>
+                    <summary className='filter__element'>Techniques<img src={openIcon} alt='' width='16px' height='8px'/></summary>
                     <ul className="filter__technical">
                     {technicalJson.technical.map((technique, key) => {
                         return (
                             <li key={key}>
-                                <label>
+                                <label className='container'>
                                 <input 
                                     type="checkbox" 
                                     className="filter__checkbox" 
                                     value={technique.id}
                                     onChange={changeTechnicalFilter}/>
                                     {technique.name}
+                                    <span className='checkmark'></span>
                                 </label>
                             </li>
                         );
                     })}
                     </ul>
-                    <div className='filter__element'><p>Mouvements</p><img src={openIcon} alt='' width='16px' height='8px'/></div>
+                    </details>
+                    <details>
+                    <summary className='filter__element'>Mouvements<img src={openIcon} alt='' width='16px' height='8px'/></summary>
                     <ul className="filter__movement">
                     {movementJson.movement.map((movement, key) => {
                         return (
                             <li key={key}>
-                                <label>
+                                <label className='container'>
                                 <input 
                                     type="checkbox" 
                                     className="filter__checkbox" 
@@ -112,11 +115,13 @@ function Search() {
                                     onChange={changeMovementFilter}
                                     />
                                     {movement.name}
+                                    <span className='checkmark'></span>
                                 </label>
                             </li>
                         );
                     })}
                     </ul>
+                    </details>
                 </div>
             </div>
             <div className="collection">
@@ -135,6 +140,15 @@ function Search() {
                 const name = artSingle.name.toLowerCase()
                 const madeBy = artSingle.madeBy.toLowerCase()
                 const description = artSingle.description.toLowerCase()
+
+                let classNameRatioHeight
+
+                if((artSingle.dimensions.height / artSingle.dimensions.width) < 1 ){
+                    classNameRatioHeight = 'large'
+                }else{
+                    classNameRatioHeight = 'long'
+                }
+
                 isEmotion = false
                 isTechnique = false
                 isMovement = false
@@ -162,8 +176,8 @@ function Search() {
                         if(isMovement || movements.length === 0){
                             if(isTechnique || technicals.length === 0){
                                 return (
-                                    <li key={key}>
-                                    <Link to={route} state={{ previousPath: window.location.pathname }}><img src={img} alt={artSingle.name}/></Link>
+                                    <li key={key} className={classNameRatioHeight}>
+                                    <Link to={route} state={{ previousPath: window.location.pathname }}><img src={img} alt={artSingle.name} /></Link>
                                     </li>
                                 );
                             }
