@@ -62,12 +62,14 @@ function Art() {
             if(e.touches.length === 2){
                 document.querySelector('.art__presentation_back').classList.toggle('not-display')
                 document.querySelector('.art__presentation_info').classList.toggle('not-display')
+                document.querySelector('.art__presentation').firstChild.style.zIndex = "3"
                 setTouchImage(true)
             }
         }else{
             if(e.touches.length === 0){
                 document.querySelector('.art__presentation_back').classList.toggle('not-display')
                 document.querySelector('.art__presentation_info').classList.toggle('not-display')
+                document.querySelector('.art__presentation').firstChild.style.zIndex = "-3"
                 setTouchImage(false)
             }
         }
@@ -77,7 +79,7 @@ function Art() {
     return (
         <>
             <section className="art__presentation" onTouchStart={justImage} onTouchEnd={justImage}>
-                <PinchZoomPan zoomButtons={false} position='center' maxScale={3}>
+                <PinchZoomPan zoomButtons={false} maxScale={3}>
                     <img src={img} alt='' className='art__presentation_img'/>
                 </PinchZoomPan>
                 <div className="art__presentation_back" onClick={() => navigate(-1)}><img src={returnIcon} alt=''/><span className='sr-only'>Retour en arrière</span></div>
