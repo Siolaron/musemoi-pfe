@@ -1,7 +1,7 @@
 import React from 'react'
+import LinkArt from '../../components/linkArt'
 import collectionJson from '../../data/personnal.json'
 import artJson from '../../data/art.json'
-import { Link } from 'react-router-dom'
 import '../../style/collection.css'
 
 function Collection() {
@@ -15,9 +15,7 @@ function Collection() {
             const route = "/art/" + singleArt.id
 
           return (
-              <li key={key}>
-              <Link to={route} state={{ previousPath: window.location.pathname }}><img src={img} alt={singleArt.name} /></Link>
-              </li>
+              <LinkArt key={key} route={route} img={img} name={singleArt.name}/>
           );
         })}
       </ul>

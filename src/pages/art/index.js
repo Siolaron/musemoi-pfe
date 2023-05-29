@@ -2,6 +2,7 @@ import { useLocation, useParams, useNavigate } from "react-router-dom";
 import PinchZoomPan from "react-responsive-pinch-zoom-pan";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import remplirTableauAleatoire from '../../helpers/randomArray';
 import artJson from '../../data/art.json';
 import technicalJson from '../../data/technical.json';
 import emotionsJson from '../../data/emotions.json';
@@ -9,15 +10,6 @@ import personalJson from '../../data/personnal.json';
 import returnIcon from '../../assets/icone/back.png'
 import mapPin from '../../assets/icone/pin.png'
 import '../../style/art.css'
-
-
-function remplirTableauAleatoire() {
-    let tableau = [];
-    for (var i = 0; i < 30; i++) {
-        tableau.push(Math.floor(Math.random() * 100) + 1);
-    }
-    return tableau;
-}
 
 const tableauAleatoire = remplirTableauAleatoire();
   
@@ -149,7 +141,7 @@ function Art() {
                                 onChange={e => setArtEmotionInput(e.target.value)}
                                 />
                             </label>
-                            <p>Si vous n’avez pas d’idée vous pouvez toujours seléctionner un ressenti</p>
+                            <p>Si vous n’avez pas d’idée vous pouvez toujours sélectionner un ressenti</p>
                             <ul className='art__popup_list-emotions'>
                             {emotionsJson.emotions.map((emotion, key) => {
                                 if(tableauAleatoire.indexOf(emotion.id) !== -1){

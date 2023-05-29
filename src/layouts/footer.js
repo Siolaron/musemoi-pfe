@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../style/layouts/footer.css'
-import {useLocation} from 'react-router-dom';
 
 function Footer() {
   return (
@@ -56,7 +55,7 @@ function Footer() {
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-        <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+        <svg width="35" height="35" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" className='search__icon'>
           <path class="stroke-svg" d="M27.3468 23.3737C28.5951 21.2832 29.3123 18.839 29.3123 16.2273C29.3123 8.51725 23.0621 2.26704 15.3521 2.26704C7.6421 2.26704 1.39185 8.51725 1.39185 16.2273C1.39185 23.9373 7.6421 30.1875 15.3521 30.1875C18.0008 30.1875 20.4773 29.4499 22.5873 28.1687C22.6068 28.1924 22.6265 28.2161 22.6461 28.2397C23.828 29.6656 24.9912 31.0689 26.2937 32.4528C27.4597 33.6915 29.2195 33.8497 30.4557 32.681C30.6767 32.4721 30.9166 32.2391 31.1766 31.9791C31.4366 31.7191 31.6697 31.4791 31.8786 31.2582C33.0471 30.022 32.889 28.2623 31.6503 27.0963C30.2665 25.7937 28.863 24.6305 27.4372 23.4487C27.4071 23.4237 27.377 23.3987 27.3468 23.3737Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path class="stroke-svg" d="M15.3522 22.6705C18.9107 22.6705 21.7954 19.7857 21.7954 16.2273C21.7954 12.6688 18.9107 9.78409 15.3522 9.78409C11.7938 9.78409 8.90906 12.6688 8.90906 16.2273C8.90906 19.7857 11.7938 22.6705 15.3522 22.6705Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>

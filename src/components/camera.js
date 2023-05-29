@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {useEffect, useRef} from "react";
+import {useEffect} from "react";
 import '../style/camera.css'
 
 function Camera(props) {
@@ -12,7 +12,6 @@ function Camera(props) {
             {facingMode: { exact: "environment" }}
           , audio: false })
         .then((stream) => {
-            console.log(video);
             video.srcObject = stream;
             video.addEventListener('loadeddata', () => {
                 video.play();

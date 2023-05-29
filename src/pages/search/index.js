@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import CheckboxSearch from '../../components/checkboxSearch';
+import LinkArt from '../../components/linkArt';
 import artJson from '../../data/art.json';
 import technicalJson from '../../data/technical.json';
 import emotionsJson from '../../data/emotions.json';
 import movementJson from '../../data/movement.json';
-import { Link, useLocation } from 'react-router-dom';
 import openIcon from '../../assets/icone/open.png';
 import '../../style/search.css';
 
@@ -61,22 +63,8 @@ function Search() {
                     <summary className='filter__element'>Emotions<img src={openIcon} alt='' width='16px' height='8px'/></summary>
                     <ul className="filter__emotion">
                     {emotionsJson.emotions.map((emotion, key) => {
-                        let classNameEmotion = "filter__checkbox emotion-" + emotion.id
-
                         return (
-                            <li key={key}>
-                                <label className='container'>
-                                <input 
-                                    type="checkbox" 
-                                    className={classNameEmotion}
-                                    value={emotion.id}
-                                    onChange={changeEmotionsFilter}
-                                    checked={emotions.find(el => el === emotion.id) >= 0}
-                                    />
-                                    {emotion.name}
-                                    <span className='checkmark'></span>
-                                </label>
-                            </li>
+                            <CheckboxSearch key={key} id={emotion.id} function={changeEmotionsFilter} name={emotion.name} checked={emotions.find(el => el === emotion.id) >= 0}/>
                         );
                     })}
                     </ul>
@@ -86,17 +74,7 @@ function Search() {
                     <ul className="filter__technical">
                     {technicalJson.technical.map((technique, key) => {
                         return (
-                            <li key={key}>
-                                <label className='container'>
-                                <input 
-                                    type="checkbox" 
-                                    className="filter__checkbox" 
-                                    value={technique.id}
-                                    onChange={changeTechnicalFilter}/>
-                                    {technique.name}
-                                    <span className='checkmark'></span>
-                                </label>
-                            </li>
+                            <CheckboxSearch key={key} id={technique.id} function={changeTechnicalFilter} name={technique.name}/>
                         );
                     })}
                     </ul>
@@ -106,18 +84,7 @@ function Search() {
                     <ul className="filter__movement">
                     {movementJson.movement.map((movement, key) => {
                         return (
-                            <li key={key}>
-                                <label className='container'>
-                                <input 
-                                    type="checkbox" 
-                                    className="filter__checkbox" 
-                                    value={movement.id}
-                                    onChange={changeMovementFilter}
-                                    />
-                                    {movement.name}
-                                    <span className='checkmark'></span>
-                                </label>
-                            </li>
+                            <CheckboxSearch key={key} id={movement.id} function={changeMovementFilter} name={movement.name}/>
                         );
                     })}
                     </ul>
@@ -176,9 +143,7 @@ function Search() {
                         if(isMovement || movements.length === 0){
                             if(isTechnique || technicals.length === 0){
                                 return (
-                                    <li key={key} className={classNameRatioHeight}>
-                                    <Link to={route} state={{ previousPath: window.location.pathname }}><img src={img} alt={artSingle.name} /></Link>
-                                    </li>
+                                    <LinkArt key={key} class={classNameRatioHeight} route={route} img={img} name={artSingle.name}/>
                                 );
                             }
                         }

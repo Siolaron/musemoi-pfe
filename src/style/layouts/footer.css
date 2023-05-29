@@ -38,3 +38,7 @@ footer a {
 .active .fill-svg{
     fill: var(--color-gold);
 }
+
+.search__icon{
+    fill: var(--color-black);
+}
