@@ -1,5 +1,5 @@
 import { useLocation, useParams, useNavigate } from "react-router-dom";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import PinchZoomPan from "react-responsive-pinch-zoom-pan";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import artJson from '../../data/art.json';
@@ -77,11 +77,9 @@ function Art() {
     return (
         <>
             <section className="art__presentation" onTouchStart={justImage} onTouchEnd={justImage}>
-                <TransformWrapper>
-                    <TransformComponent>
-                        <img src={img} alt='' className='art__presentation_img'/>
-                    </TransformComponent>
-                </TransformWrapper>
+                <PinchZoomPan zoomButtons={false} position='center' maxScale={3}>
+                    <img src={img} alt='' className='art__presentation_img'/>
+                </PinchZoomPan>
                 <div className="art__presentation_back" onClick={() => navigate(-1)}><img src={returnIcon} alt=''/><span className='sr-only'>Retour en arrière</span></div>
                 <div className='art__presentation_info'>
                     <h2>{singleArt.name}</h2>

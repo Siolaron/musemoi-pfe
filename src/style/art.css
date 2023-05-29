@@ -24,14 +24,16 @@
     justify-content: space-between;
 }
 
+.art__presentation div:first-child{
+    position: absolute;
+    z-index: -3;
+    background-color: var(--color-blue);
+}
+
 .art__presentation_img{
     height: calc(100vh - 80px);
     object-fit: cover;
-}
-
-.transform-component-module_wrapper__SPB86{
-    position: absolute;
-    z-index: -3;
+    transform: none !important;
 }
 
 .art__presentation_info{
