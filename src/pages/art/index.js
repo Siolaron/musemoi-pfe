@@ -31,6 +31,7 @@ function Art() {
     let classNameEmotion
     const [artEmotions, setArtEmotions] = useState([])
     const [artEmotionInput, setArtEmotionInput] = useState('')
+    const [touchImage, setTouchImage] = useState(false)
     
     document.querySelector('main')?.classList.add('art');
 
@@ -57,13 +58,18 @@ function Art() {
     }
 
     const justImage = (e) =>{
-        if(e.touches.length === 2){
-            document.querySelector('.art__presentation_back').classList.toggle('not-display')
-            document.querySelector('.art__presentation_info').classList.toggle('not-display')
-        }
-        if(e.touches.length === 0){
-            document.querySelector('.art__presentation_back').classList.toggle('not-display')
-            document.querySelector('.art__presentation_info').classList.toggle('not-display')
+        if(touchImage == false){
+            if(e.touches.length === 2){
+                document.querySelector('.art__presentation_back').classList.toggle('not-display')
+                document.querySelector('.art__presentation_info').classList.toggle('not-display')
+                setTouchImage(true)
+            }
+        }else{
+            if(e.touches.length === 0){
+                document.querySelector('.art__presentation_back').classList.toggle('not-display')
+                document.querySelector('.art__presentation_info').classList.toggle('not-display')
+                setTouchImage(false)
+            }
         }
     }
     

@@ -11,6 +11,7 @@ import Footer from './layouts/footer';
 import Scan from './pages/scan';
 import './style/normalize.css';
 import './style/global.css';
+import * as serviceWorker from './serviceWorker';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,4 +34,5 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+serviceWorker.register();
 reportWebVitals();
