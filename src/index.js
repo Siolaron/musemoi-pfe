@@ -11,7 +11,6 @@ import Footer from './layouts/footer';
 import Scan from './pages/scan';
 import './style/normalize.css';
 import './style/global.css';
-import PWAInstallerPrompt from 'react-pwa-installer-prompt';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,14 +27,6 @@ root.render(
             </main>
         <Footer />
         </Router>
-        <PWAInstallerPrompt 
-            render={({ onClick }) => (
-                <button type="button" onClick={onClick}>
-                Install
-                </button>
-            )}
-            callback={(data) => console.log(data)} 
-            />
     </React.StrictMode>
 );
 
