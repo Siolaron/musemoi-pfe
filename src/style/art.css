@@ -18,14 +18,20 @@
 }
 
 .art__presentation{
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.art__presentation_img{
+    height: calc(100vh - 80px);
+    object-fit: cover;
+}
+
+.transform-component-module_wrapper__SPB86{
+    position: absolute;
+    z-index: -3;
 }
 
 .art__presentation_info{
@@ -52,6 +58,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+}
+
+.art__presentation_back img{
+    height: 25px;
 }
 
 .art__information{
@@ -165,4 +175,8 @@
 
 .filter__checkbox:checked + .art__popup_list-emotions_single {
     background-color: var(--color-gold);
+}
+
+.not-display{
+    display: none;
 }

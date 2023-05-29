@@ -1,13 +1,15 @@
 import { useLocation, useParams, useNavigate } from "react-router-dom";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import artJson from '../../data/art.json';
 import technicalJson from '../../data/technical.json';
 import emotionsJson from '../../data/emotions.json';
 import personalJson from '../../data/personnal.json';
-import { useState } from 'react';
-import { Link } from 'react-router-dom'
-import '../../style/art.css'
 import returnIcon from '../../assets/icone/back.png'
 import mapPin from '../../assets/icone/pin.png'
+import '../../style/art.css'
+
 
 function remplirTableauAleatoire() {
     let tableau = [];
@@ -53,10 +55,27 @@ function Art() {
             setArtEmotions(artEmotions.filter(element => element !== e.target.value))
         }
     }
+
+    const justImage = (e) =>{
+        if(e.touches.length === 2){
+            document.querySelector('.art__presentation_back').classList.toggle('not-display')
+            document.querySelector('.art__presentation_info').classList.toggle('not-display')
+        }
+        if(e.touches.length === 0){
+            document.querySelector('.art__presentation_back').classList.toggle('not-display')
+            document.querySelector('.art__presentation_info').classList.toggle('not-display')
+        }
+    }
+    
     
     return (
         <>
-            <section className="art__presentation" style={{backgroundImage: `url(${img})`}}>
+            <section className="art__presentation" onTouchStart={justImage} onTouchEnd={justImage}>
+                <TransformWrapper>
+                    <TransformComponent>
+                        <img src={img} alt='' className='art__presentation_img'/>
+                    </TransformComponent>
+                </TransformWrapper>
                 <div className="art__presentation_back" onClick={() => navigate(-1)}><img src={returnIcon} alt=''/><span className='sr-only'>Retour en arrière</span></div>
                 <div className='art__presentation_info'>
                     <h2>{singleArt.name}</h2>
