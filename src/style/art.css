@@ -28,6 +28,8 @@
     position: absolute;
     z-index: -3;
     background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
 }
 
 .art__presentation_img{

@@ -1,0 +1,35 @@
+@import url(./variables/color.css);
+@import url(./variables/font.css);
+
+#video{
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.camera a{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: var(--color-grey);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.camera a::after{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: var(--color-white);
+    z-index: 3;
+    position: relative;
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

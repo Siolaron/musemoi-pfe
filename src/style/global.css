@@ -1,4 +1,5 @@
-@import url('./variables/color.css');
+@import url(./variables/color.css);
+@import url(./variables/font.css);
 
 .sr-only{
     border: 0 !important;
