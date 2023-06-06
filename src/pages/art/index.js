@@ -1,6 +1,6 @@
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import PinchZoomPan from "react-responsive-pinch-zoom-pan";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import remplirTableauAleatoire from '../../helpers/randomArray';
 import artJson from '../../data/art.json';
@@ -26,6 +26,10 @@ function Art() {
     const [touchImage, setTouchImage] = useState(false)
     
     document.querySelector('main')?.classList.add('art');
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const handlePopUP = (e) =>{
         document.querySelector('#overlay').classList.remove('art__popup-hidden')
