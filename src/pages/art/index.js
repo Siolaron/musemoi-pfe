@@ -98,7 +98,13 @@ function Art() {
                 {previousPath !== '/search' && (
                 <>
                 <p className='art__information_more'>À propos de l'oeuvre</p>
-                <p>{singleArt.description}</p>
+                {singleArt.description.map((data, key) => {
+                    return (
+                        <p className="art__information_description" key={key}> 
+                            {data}
+                        </p>
+                    );
+                })}
                 </>
                 )}
                 {previousPath !== '/scan' && (
@@ -124,6 +130,11 @@ function Art() {
                     );
                 })}
                 </ul>
+                </>
+                )}
+                 {previousPath === '/search' && (
+                <>
+                <div className='art__information_addCollection'>Ajouter à mes souhaits <img src={returnIcon} alt=''/></div>
                 </>
                 )}
                 {previousPath === '/scan' && (

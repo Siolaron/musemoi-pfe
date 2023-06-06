@@ -106,7 +106,7 @@ function Search() {
                 const route = "/art/" + artSingle.id
                 const name = artSingle.name.toLowerCase()
                 const madeBy = artSingle.madeBy.toLowerCase()
-                const description = artSingle.description.toLowerCase()
+                const description = artSingle.description.toString().toLowerCase()
 
                 let classNameRatioHeight
 

@@ -8,7 +8,7 @@
     border-radius: 5px;
     width: 80vw;
     transition: all 5s ease-in-out;
-    height: 70vh;
+    height: auto;
     position: relative;
 }
 
@@ -171,7 +171,7 @@
     overflow: auto;
 }
 
-@media (max-width: 350px) { 
+@media (max-width: 375px) { 
     .art__popup_list-emotions{ 
         max-height: 40vh;
     }
@@ -200,4 +200,8 @@
 
 .art__popup form input[type=submit]{
     margin-top: 16px;
+}
+
+.art__information_description{
+    line-height: 1.4rem;
 }
