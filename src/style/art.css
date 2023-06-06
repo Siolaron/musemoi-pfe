@@ -6,9 +6,9 @@
     padding: 1.5rem;
     background: #fff;
     border-radius: 5px;
-    width: 80%;
-    position: relative;
+    width: 80vw;
     transition: all 5s ease-in-out;
+    height: 70vh;
     position: relative;
 }
 
@@ -156,6 +156,10 @@
     margin: 10px 0;
 }
 
+.art__popup form > label > p{
+    margin-right: 36px;
+}
+
 .art__popup_list-emotions .filter__checkbox {
     display: none;
 }
@@ -163,7 +167,17 @@
 .art__popup_list-emotions{
     display: flex;
     flex-wrap: wrap;
+    max-height: 45vh;
+    overflow: auto;
 }
+
+@media (max-width: 350px) { 
+    .art__popup_list-emotions{ 
+        max-height: 40vh;
+    }
+    
+}
+
 
 .art__popup_list-emotions li{
     margin: 8px 5px;
@@ -182,4 +196,8 @@
 
 .not-display{
     display: none;
+}
+
+.art__popup form input[type=submit]{
+    margin-top: 16px;
 }
