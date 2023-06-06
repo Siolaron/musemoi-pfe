@@ -7,7 +7,11 @@
             "technical": [0],
             "dimensions": { "height": 88.5, "width": 59 },
             "movement": [0],
-            "description": "Description",
+            "description": [
+                "Ce tableau représente une jeune femme vêtue à la mode de l'époque médiévale à la chevelure rousse en bandeaux portant un chignon bas coiffé de perles. Elle est montrée de profil en train de respirer le parfum d'une fleur d'un rosier grimpant d'un rose carné montant sur un muret de brique. Le fond laisse voir une demeure de l'autre côté du muret où se devine un jardin avec un cyprès.",
+                "Une loggia aux arcades de plein cintre sous un toit de tuiles romaines donne sur ce jardin. La jeune femme aux yeux clos est vêtue d'une robe vert-bleu aux motifs floraux stylisés de couleur jaune. Elle tient le pédoncule de la rose de la main droite pour porter la fleur à ses narines. Elle pose le plat de la main gauche sur le muret.",
+                "Ce tableau empreint de sensualité et de féminité illustre l'aspiration à l'amour, amour tragique puisque le jeune homme qui aime Maud est empêché de le lui manifester."
+            ],
             "place": "Collection privée",
             "emotions": [
                 7, 11, 67, 15, 25, 36
@@ -22,10 +26,14 @@
             "technical": [0],
             "dimensions": { "height": 44.5, "width": 39 },
             "movement": [1],
-            "description": "",
+            "description": [
+                "Elle représente une adolescente (ou une très jeune adulte) en buste, sur un arrière-plan d'un noir uniforme. Les épaules tournées vers la gauche du cadre, elle est montrée de trois quarts dos. Sa tête effectue une rotation vers la gauche, ce qui découvre son visage de trois quarts face. Elle fixe le spectateur de ses yeux en coin, et semble s'adresser à lui de sa bouche entrouverte, aux lèvres rouges et pulpeuses. ",
+                "Sa tête est couverte d'un turban bleu outremer, surmonté d'un tissu jaune qui lui pend dans le dos. C'est en référence à cet attribut exotique que l'œuvre a d'abord été désignée comme La Jeune Fille au turban. Par ailleurs, elle porte au lobe de l'oreille gauche (la seule visible dans cette pose) une perle qui donne à la toile son nom officiel actuel — même si la nature exacte du pendant d'oreille est encore discutée. La jeune femme est vêtue de ce qui semble être une veste, rehaussée d'un col blanc, au tissu lourd offrant peu de plis d'une couleur ocre foncé, voire marron.",
+                "Une lumière franche, provenant du bord gauche du tableau, éclaire le modèle pratiquement de face. Elle produit un jeu d'ombres variées sur son dos et l'arrière de sa tête, dans la moitié droite de l'œuvre. C'est dans cette partie ombrée que se détache le scintillement des reflets du pendant d'oreille."
+            ],
             "place": "Mauritshuis - La Haye, Pays-Bas",
             "emotions": [
-                1, 2
+                10, 11, 23, 36, 57, 61, 78, 94
             ],
             "img": "1.jpg"
         },
@@ -37,9 +45,14 @@
             "technical": [0],
             "dimensions": { "height": 74, "width": 92 },
             "movement": [2],
-            "description": "",
+            "description": [
+                "La Nuit étoilée est une célèbre peinture à l'huile réalisée par Vincent van Gogh en 1889. Elle représente un ciel nocturne tourmenté rempli d'étoiles lumineuses et d'un croissant de lune.",
+                "Cette œuvre exprime la vision subjective et émotionnelle de van Gogh du monde qui l'entoure. Les tourbillons et les motifs linéaires créent une sensation de mouvement et d'agitation, contrastant avec la tranquillité du village en bas.",
+                "La Nuit étoilée est un témoignage de la capacité de van Gogh à capturer l'essence émotionnelle de la nature, révélant sa propre lutte intérieure et son amour pour les paysages nocturnes."
+            ],
+            "place": "Museum of Modern Art - New York, États-Unis",
             "emotions": [
-                1, 2
+                2, 8, 10, 25, 29, 37, 46, 84, 91
             ],
             "img": "2.jpg"
         },
@@ -51,9 +64,13 @@
             "technical": [1, 2],
             "dimensions": { "height": 91, "width": 73.5 },
             "movement": [3],
-            "description": "",
+            "description": [
+                "Le tableau fait partie d'un cycle d'une vingtaine de tableaux, appelé « La Frise de la vie » et resté inachevé.",
+                "Munch a exécuté cinq versions du tableau, dont les plus fameuses sont une tempera sur carton au musée Munch d'Oslo (de 83,52 cm de haut sur 66 cm de large), et une peinture à l'huile, tempera et pastel à la Galerie nationale d'Oslo (91 cm de haut sur 73,5 cm de large).",
+                "Une troisième version appartient également au musée Munch. Une quatrième appartenait au milliardaire norvégien Petter Olsen, avant d'être vendue aux enchères à un acheteur anonyme, le 2 mai 2012, pour la somme record de 119,92 millions de dollars. Il dépasse donc le Nu au plateau de sculpteur de Picasso qui a été vendu 106,5 millions. La cinquième version est une lithographie réalisée en 1895 à Berlin."
+            ],
             "emotions": [
-                1, 2
+                2, 3, 4, 12, 18, 30, 47, 67, 83
             ],
             "img": "3.jpg"
         },
@@ -65,10 +82,15 @@
             "technical": [],
             "dimensions": { "height": 202, "width": 36 },
             "movement": [4],
-            "description": "",
+            "description": [
+                "La statue est plus grande (2,02 m) que la taille naturelle. Elle représente certainement la déesse grecque Aphrodite (Vénus chez les Romains), debout, le torse dénudé et les jambes drapées.",
+                "La déesse est coiffée très simplement : les cheveux, divisés par une raie en épais bandeaux ondulés, forment derrière la tête un chignon rond d'où s'échappent trois mèches tombant dans le cou. La tête était ornée d'un diadème en métal fixé sur une bande lisse (les trous de fixation sont visibles), et les oreilles de boucles en métal. Le visage est plein et lisse, le nez droit, les yeux petits et peu enfoncés, la bouche à la lèvre inférieure charnue est à peine entrouverte. C'est un visage calme et sans expression, encore très classique.",
+                "Le haut du corps dénudé est parfaitement proportionné. Les seins sont écartés et très fermes, le torse est modelé par la ligne blanche et les muscles abdominaux, le ventre est légèrement bombé. Le bras droit, conservé jusqu'au milieu du biceps, est dirigé vers le bas, pressé contre le sein ; au-dessus de la fracture, deux trous servaient peut-être à fixer un bracelet en métal. Le dos est modelé par la dépression de la colonne vertébrale, les fesses sont peu volumineuses.",
+                "a jambe droite tendue porte le poids du corps, le pied nu bien à plat. La jambe gauche, à la cuisse un peu trop courte, est légèrement fléchie, car le pied maintenant disparu était posé sur un support bas. Le bas du ventre et les jambes sont couverts d'une draperie qui n'est pas celle d'un himation, manteau que les femmes ne portaient pas à même la peau, mais celle d'une grande étoffe, qui pouvait servir à la sortie du bain. Roulée en bourrelet sous les hanches, elle drape d'abord l'avant, puis l'arrière des jambes, revient à l'avant sur la cuisse gauche relevée, et se termine en tombant verticalement à l'intérieur de la jambe. Cette disposition est censée permettre à une étoffe de tenir en place toute seule, sans l'aide des mains. Très inhabituelle, elle permet d'identifier toutes les statues d'Aphrodite du même type."
+            ],
             "place": "Département des antiquités grecques, étrusques et romaines du musée du Louvre - Paris, France",
             "emotions": [
-                1, 2
+                1, 7, 11, 23, 36, 53, 78
             ],
             "img": "4.png"
         },
@@ -80,10 +102,15 @@
             "technical": [1],
             "dimensions": { "height": 172.5, "width": 278.5 },
             "movement": [6],
-            "description": "",
+            "description": [
+                "La scène représente à gauche Zéphyr, le doux vent du printemps. Il est représenté avec son manteau bleu pâle fermé par un nœud et entouré d'une nuée de fleurs. L'air s'échappe de ses joues gonflées, représenté par des lignes droites claires. La femme enveloppée d'un manteau vert possède une nature aérienne. Politien, dans ses célèbres Stanze per la Giostra, évoque une brise (aura en latin et en italien), nom qui est repris au pluriel par Vasari.",
+                "La Vénus sort des eaux, debout dans la conque d'un coquillage (coquille Saint-Jacques) géant posée sur les flots agités par le souffle de Zéphyr. Sa posture est en « contrapposto », pose typique des statues grecques antiques : ses hanches sont dans une direction contraire à ses épaules, ce qui fait ressortir sa silhouette élancée et gracieuse. Du ciel, tombent doucement des fleurs de myrte. À droite, elle est reçue par un personnage féminin, l'une des Heures, fille de Jupiter (Zeus) et de Thémis ou la divinité du printemps tentant, malgré le vent, de la couvrir d'un voile rouge parsemé de motifs floraux, pour cacher une nudité déjà bien dissimulée par la déesse elle-même. Cette posture témoigne de la pudeur de Vénus.",
+                "L’ensemble est animé d'un mouvement de légèreté : les personnages flottent, volent, semblent danser. Le mouvement des fleurs, des cheveux, des vagues et des tissus répond à celui du vent que Zéphyr fait souffler.",
+                "De cette composition ressort une sensation de calme : Vénus semble se réveiller d’un rêve, elle nous regarde sans nous regarder, ses paupières sont à demi ouvertes ; elle est nue, également, ce qui est une première dans l'art de la peinture ; d'ordinaire, seules les œuvres religieuses comportaient des personnages féminins dénudés. La mer est paisible avec seulement quelques ondelettes, pas de tempête à l'horizon, le vent est léger."
+            ],
             "place": "Galerie des Offices, salle 10-14 Botticelli - Florence, Italie",
             "emotions": [
-                1, 2
+                57, 32, 84, 13, 79, 22, 98, 45, 61, 7
             ],
             "img": "6.jpg"
         },
@@ -95,10 +122,15 @@
             "technical": [0],
             "dimensions": { "height": 81, "width": 64 },
             "movement": [5],
-            "description": "",
+            "description": [
+                "Au centre du tableau se tient une jeune femme, la maîtresse du Baron, qui s’élance avec bonheur sur une balançoire. Elle jette avec malice sa chaussure – signe de sensualité – vers son amant (le Baron), dévoilant par la même occasion sa cheville qui avait à l’époque une connotation éminemment érotique !",
+                "Par un heureux hasard, l’amant est situé au bon endroit pour voir les jambes (voire plus ?!) de sa maîtresse : une vision qui le trouble au point de lui faire perdre l’équilibre et de le faire chavirer dans les fleurs.",
+                "Tout à droite, l’évêque souhaité par le Baron a été remplacé par Fragonard par un mari trompé, qui pousse la balançoire tout sourire sans se douter que sa femme s’amuse avec un autre homme.",
+                "Sur le côté gauche, un Putto symbole de l’Amour, porte un doigt à ses lèvres et nous invite à garder le silence… Une façon d’inviter le spectateur dans la confidence !"
+            ],
             "place": "Wallace Collection - Londres, Royaume-Uni",
             "emotions": [
-                1, 2
+                92, 39, 10, 51, 16, 83, 70, 26, 64, 96
             ],
             "img": "5.jpg"
         },
@@ -110,10 +142,14 @@
             "technical": [4],
             "dimensions": { "height": 77, "width": 53 },
             "movement": [6, 7],
-            "description": "",
+            "description": [
+                "La Joconde, également connue sous le nom de Mona Lisa, est une célèbre peinture à l'huile réalisée par Léonard de Vinci au XVIe siècle. Elle représente une femme au sourire énigmatique et aux yeux expressifs.",
+                "Cette œuvre emblématique de la Renaissance italienne incarne la beauté féminine idéalisée et la perfection artistique. La Joconde est un symbole de mystère et de fascination, suscitant de nombreuses théories et interprétations.",
+                "Le portrait dégage une présence énigmatique grâce à la subtilité des détails et à la technique de sfumato utilisée par de Vinci, créant une atmosphère intemporelle et captivante."
+            ],
             "place": "Musée du Louvre, peintures italiennes, salle 6 - Paris, France",
             "emotions": [
-                1, 2
+                8, 43, 29, 55, 91, 18, 67, 36, 75, 2
             ],
             "img": "7.jpg"
         },
@@ -122,13 +158,17 @@
             "madeBy": "Léonard de Vinci",
             "name": "La Cène",
             "createdAt": "1495-1498",
-            "technical": [5],
+            "technical": [1],
             "dimensions": { "height": 460, "width": 880 },
             "movement": [6, 7],
-            "description": "",
+            "description": [
+                "La Cène est une célèbre fresque réalisée par Léonard de Vinci à la fin du XVe siècle. Elle représente le dernier repas du Christ avec ses disciples avant sa crucifixion.",
+                "Cette œuvre emblématique est connue pour sa composition complexe et son attention aux détails. Les expressions des personnages et les gestes symboliques reflètent les émotions et les relations entre eux.",
+                "La Cène est un chef-d'œuvre de la Renaissance italienne, illustrant la maîtrise de de Vinci dans la représentation de la figure humaine et son talent narratif dans la représentation d'un moment biblique clé."
+            ],
             "place": "Église Santa Maria delle Grazie - Milan, Italie",
             "emotions": [
-                1, 2
+                50, 99, 14, 62, 38, 81, 24, 73, 35, 48
             ],
             "img": "8.jpg"
         },
@@ -140,10 +180,15 @@
             "technical": [0, 4],
             "dimensions": { "height": 180, "width": 180 },
             "movement": [11],
-            "description": "",
+            "description": [
+                "Le tableau est au format carré dont les deux personnages occupent le centre-haut. Elle représente un homme qui embrasse une femme sur la joue. Le couple est enlacé. Se tenant debout, et penché sur sa compagne, l'homme est vêtu d'une robe jaune avec des formes géométriques dont des rectangles gris, noir, blanc. Il porte sur la tête une couronne de feuilles de lierre et son visage tourné vers celui de sa compagne est invisible. Agenouillée, la femme porte elle aussi une robe jaune mais différente de celle de l'homme, avec des cercles multicolores. Sa chevelure est fleurie. Son visage aux yeux clos est entièrement visible.",
+                "Son vêtement cache entièrement l'homme mais celui de la femme la révèle en partie : bras gauche, mollets et pieds, courbes du corps.",
+                "Les mains sont visibles : l'homme enserre la tête de sa compagne, dont le visage est tourné vers le spectateur, sa main droite la tenant par le menton et la joue gauche, et sa main gauche soutenant par la nuque la tête fortement rejetée en arrière. La femme quant à elle pose sa main droite sur la nuque de son compagnon et tient de sa main gauche la main droite de l'homme.",
+                "Le sol à leurs pieds est densément couvert de fleurs et de motifs végétaux, qui tranchent avec un arrière-plan plus uniforme aux tonalités dorées."
+            ],
             "place": "Österreichische Galerie Belvedere, palais du Belvédère - Vienne, Autriche ",
             "emotions": [
-                1, 2
+                87, 17, 66, 31, 95, 42, 69, 3, 80, 54
             ],
             "img": "9.jpg"
         },
@@ -155,10 +200,14 @@
             "technical": [0],
             "dimensions": { "height": 45.5, "width": 41 },
             "movement": [1],
-            "description": "",
+            "description": [
+                "L'œuvre compte parmi les plus célèbres de Vermeer, et même de l'histoire de la peinture — son utilisation à des fins commerciales n'étant sûrement pas étrangère à sa grande popularité en France.",
+                "Unique tableau de Vermeer prenant comme sujet principal une femme d'humble condition (il traitera le sujet féminin sous d'autres aspects, notamment avec La Jeune Fille à la perle), cette scène de genre suggère le calme et la tranquillité des travaux domestiques dans l'atmosphère saine et paisible d'une encoignure de pièce. Une douce clarté partage l'espace entre zones d'ombre et de lumière, et vient illuminer la nature morte de la table du premier plan, notamment le pain dans la corbeille, constellé de petites touches lumineuses.",
+                "La laitière aux formes généreuses s'absorbe dans son activité nourricière en regardant, tout comme le spectateur, le mince filet de lait qui coule de sa cruche dans un plat, image instantanée fixée dans l'éternité par le pinceau du peintre."
+            ],
             "place": "Rijksmuseum - Amsterdam, Pays-Bas",
             "emotions": [
-                1, 2
+                11, 72, 100, 25, 78, 58, 30, 65, 44, 9
             ],
             "img": "10.jpg"
         },
@@ -170,10 +219,15 @@
             "technical": [0],
             "dimensions": { "height": 84.1, "width": 152.4 },
             "movement": [8],
-            "description": "",
+            "description": [
+                "Nighthawks adopte un format qui peut faire penser à une scène projetée sur un écran de cinéma. La scène se déroule la nuit. Le tableau est construit selon une composition soignée, et il se caractérise par une qualité intemporelle et universelle qui transcende son lieu particulier. Il montre un instantané de quatre personnes assises dans un diner (restaurant typique américain) de centre-ville, tard dans la nuit. Le peintre a expliqué que sa toile s'inspire d'un restaurant sur Greenwich Avenue à New York.",
+                "La rue est vide soit parce qu'il est très tard (les diners sont souvent ouverts 24 heures sur 24) soit en raison du contexte de guerre. En haut, sur la devanture du restaurant figure une publicité pour les cigares Phillies ainsi qu'un dessin cigare avec le slogan « Seulement 5 ¢ ». Il s'agit d'une marque américaines et les cigares sont fabriqués à l’origine à Philadelphie, en Pennsylvanie.",
+                "L'atmosphère sous un angle et un éclairage si particulier, semble tendue, dramatique et figée. Les couleurs dominantes sont le vert (couleur froide), le brun et le jaune et forment de grands aplats géométriques. Le spectateur, attiré par la lumière, est exclu de la scène par la vitre du diner. L'entrée du restaurant n'est pas visible, ce qui accentue l'impression que les personnages sont enfermés. On retrouve les objets typiques d'un diner américain : long comptoir, distributeur de serviettes en papier, mug, salière, poivrier.",
+                "Un homme de dos mange, seul. Un couple, dont l'homme et la femme habillée en rouge se touchent presque la main mais ne se parlent pas, est assis à proximité. L'épouse d'Edward Hopper a servi de modèle pour la femme assise au bar et lui-même comme modèle pour l’homme qui nous tourne le dos. Le serveur parait discuter. On aperçoit la vitrine sombre du magasin d'en face. L’absence de la porte de sortie du bar rend les personnages enfermés comme dans une cage ou un aquarium. Les personnages semblent perdus dans leurs pensées."
+            ],
             "place": "Art Institute of Chicago - Chicago, États-Unis",
             "emotions": [
-                1, 2
+                77, 28, 93, 4, 21, 88, 15, 68, 90, 46
             ],
             "img": "11.jpg"
         },
@@ -185,10 +239,14 @@
             "technical": [0],
             "dimensions": { "height": 78, "width": 65.3 },
             "movement": [9],
-            "description": "",
+            "description": [
+                "Le tableau montre un paysan debout à côté de sa fille célibataire devant une maison en bois. La façon dont les personnages sont peints, au premier plan de manière frontale, évoque un style de photographie propre à l'Amérique du 19e siècle.",
+                "À gauche, la femme est vêtue d'une robe noire à col claudine blanc et d'une blouse marron à imprimé colonial imitant le style traditionnel américain d'époque. Sa tenue est agrémentée d'une broche ornée d'un camée orangé. La bouche pincée et les rides apparentes à la commissure de ses lèvres révèlent une certaine amertume. Elle paraît sombre et soucieuse. À droite, un homme plus âgé regarde droit devant sévèrement à travers des lunettes rondes. Son visage allongé, sa calvitie avancée, ses sourcils en accent circonflexe et sa fine bouche lui confèrent un air austère. Il porte une chemise sans col à fines rayures vertes, une salopette en denim sous une veste noire et brandit avec raideur, de sa main droite, une fourche à trois dents. Au-dessus de son épaule gauche, une grange rouge est partiellement visible.",
+                "Au centre de la peinture se dresse la célèbre maison avec sa fenêtre haute néo-gothique qui surmonte une terrasse abritée par un auvent reposant sur de frêles colonnes. À travers la fenêtre, on distingue un rideau brodé. Derrière la maison, en arrière-plan, on aperçoit des arbres ronds plutôt naïfs."
+            ],
             "place": "Art Institute of Chicago - Chicago, États-Unis",
             "emotions": [
-                1, 2
+                37, 94, 23, 52, 85, 63, 12, 49, 76, 27
             ],
             "img": "12.jpg"
         },
@@ -200,10 +258,13 @@
             "technical": [0],
             "dimensions": { "height": 100, "width": 81 },
             "movement": [10],
-            "description": "",
+            "description": [
+                "La Promenade, aussi appelée La Femme à l'ombrelle, appartient à une série de peintures exécutées par Monet pendant les étés 1875 et 1876 et qui représentent le jardin de sa seconde maison à Argenteuil et les champs couverts de coquelicots près de Colombes et de Gennevilliers. La figure humaine, qui avait joué un rôle négligeable dans ses peintures ces dernières années, prend une importance renouvelée, avec sa femme Camille servant constamment de modèle. Alors que toutes ses peintures partagent la même fascination pour la captation des effets éphémères de la lumière du soleil (c'est la signature de son style impressionniste), cette peinture est singulière par le rôle prépondérant que Monet accorde au personnage dans le paysage.",
+                "Camille, vêtue de blanc et portant un chapeau voilé, est debout sur une colline, son corps légèrement déplacé par rapport au centre, mais visuellement équilibré par le parasol vert et blanc qu'elle tient. Son regard intense et la position de son corps suggèrent qu'elle ait soudainement pris conscience de la présence du spectateur et qu'elle se soit retournée en réponse, créant une illusion convaincante d'un mouvement saisi sur le vif. Derrière et à gauche de Camille apparaît la forme beaucoup plus petite de leur fils Jean, qui avait presque huit ans à l'époque,lui aussi regardant attentivement le spectateur. La ligne d'horizon basse et la position du corps contre le ciel donnent à la figure une sensation de monumentalité qui est inhabituelle dans les peintures de Monet du milieu des années 1870."
+            ],
             "place": "National Gallery of Art - Washington, États-Unis",
             "emotions": [
-                1, 2
+                89, 6, 33, 74, 19, 56, 40, 5, 82, 60
             ],
             "img": "13.jpg"
         },
@@ -215,10 +276,13 @@
             "technical": [0],
             "dimensions": { "height": 48, "width": 63 },
             "movement": [10],
-            "description": "",
+            "description": [
+                "Au premier plan dans une mer aux teintes bleu vert se dégage en silhouette une figure propulsant une barque à la godille ; plus loin, une seconde, indistincte, contribue à un effet de profondeur. La seule couleur chaude est le rouge-orangé du disque solaire et ses reflets dans le clapot de l’eau. À l'arrière-plan, dans la brume d'un camaïeu gris-bleuté, se noie le port du Havre avec dans les lignes de fuites un jeu de verticales qui figurent des mâts de grands voiliers à quai, des grues sur des docks et des cheminées d'usines qui indiquent un vent léger de nord-ouest. La marée est haute puisqu'on aperçoit les mats de grands bateaux, et que ceux-ci ne peuvent accéder au port que pendant cette période. ",
+                "La composition se caractérise par l'horizontalité du paysage représenté et le partage de l'image en tiers selon le schéma de la perspective japonaise, le tiers supérieur étant composé de touches horizontales consacrées au ciel et les deux tiers inférieurs au port baigné dans un brouillard bleuté et à la mer. Cependant, tout est esquissé pour saisir cet instant fugitif avant que la lumière aveuglante du jour ne fige le paysage. Les silhouettes des bateaux se détachent à peine du reste du tableau, baigné dans le flou de l'atmosphère du grand port. Seul le disque orange et plat du soleil levant se détache de ses tons froids. Cela place cette œuvre à la frontière de l'abstraction, si le soleil et la barque, ainsi que le titre, ne venaient pas guider le spectateur à décrypter la scène."
+            ],
             "place": "Musée Marmottan Monet - Paris, France",
             "emotions": [
-                1, 2
+                12, 26, 81, 9, 57, 63, 48, 70, 93, 34
             ],
             "img": "14.jpg"
         },
@@ -230,10 +294,14 @@
             "technical": [0],
             "dimensions": { "height": 131, "width": 175 },
             "movement": [10],
-            "description": "",
+            "description": [
+                "La scène se déroule en plein air, contrainte que s'imposaient les impressionnistes, un dimanche après-midi, un jour de beau temps au moulin de la Galette à Montmartre. Les personnes présentes dans la scène sont des amis du peintre : modèles, peintres, habitués du lieu, parmi lesquels on reconnaît l’écrivain Georges Rivière, les peintres Norbert Gœneutte et Franc-Lamy qui sont installés à la table du premier plan et une dénommée Estelle qui est assise sur le banc ainsi que Frédéric Samuel Cordey. Renoir représente ainsi sur sa toile une foule joyeuse de personnes de tous les milieux sociaux, qui partagent du bon temps, dansent à gauche, bavardent à droite, fument et boivent. ",
+                "On peut définir trois plans : au premier plan, on a la discussion des personnes assises, au deuxième plan les danseurs et au troisième plan des bâtiments où l’on aperçoit l’orchestre.",
+                "Au lieu d’utiliser, comme le font la plupart des peintres, la netteté au premier plan puis progressivement un flou, le flou est présent partout et la seule distinction de profondeur se fait par la taille des personnes représentées. Renoir décide de représenter cette scène dans une ambiance bleutée parsemée de taches de lumière réparties inégalement comme si elles traversaient le feuillage des arbres pour parvenir à la foule. C’est grâce à la lumière que Renoir fait ressortir ses personnages, par exemple le couple à gauche de la scène semble être entouré de lumière au sol et la robe rose clair de la femme renforce cet effet et les met en avant. Renoir utilise des couleurs pastel plus ou moins vives à certains endroits."
+            ],
             "place": "Musée d'Orsay - Paris, France",
             "emotions": [
-                1, 2
+                8, 34, 69, 90, 51, 77, 47, 20, 31, 55
             ],
             "img": "15.jpg"
         }

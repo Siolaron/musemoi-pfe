@@ -8,19 +8,31 @@
         {
             "artId": 2,
             "emotions": [
-                1, 2
+                2, 10
             ]
         },
         {
             "artId": 5,
             "emotions": [
-                1, 2
+                57, 7
             ]
         },
         {
-            "artId": 9,
+            "artId": 13,
             "emotions": [
-                1, 2
+                74, 19
+            ]
+        },
+        {
+            "artId": 4,
+            "emotions": [
+                7, 11
+            ]
+        },
+        {
+            "artId": 6,
+            "emotions": [
+                92, 39
             ]
         }
     ]
