@@ -2,7 +2,7 @@
 @import url(./variables/font.css);
 
 .art__popup{
-    margin: 70px auto;
+    margin: 1rem auto;
     padding: 1.5rem;
     background: #fff;
     border-radius: 5px;
