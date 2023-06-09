@@ -6,15 +6,9 @@
             ]
         },
         {
-            "artId": 2,
+            "artId": 4,
             "emotions": [
-                2, 10
-            ]
-        },
-        {
-            "artId": 5,
-            "emotions": [
-                57, 7
+                7, 11
             ]
         },
         {
@@ -24,9 +18,15 @@
             ]
         },
         {
-            "artId": 4,
+            "artId": 5,
             "emotions": [
-                7, 11
+                57, 7
+            ]
+        },
+        {
+            "artId": 2,
+            "emotions": [
+                2, 10
             ]
         },
         {
